@@ -1,0 +1,16 @@
+defaults: &defaults
+  adapter: postgresql
+  template: template0
+  encoding: unicode
+  collation: ru_RU.UTF-8
+  ctype: ru_RU.UTF-8
+  reconnect: true
+  pool: 25
+
+development:
+  <<: *defaults
+  host: localhost
+  port: 5432
+  database: database_name
+  username: username
+  password: password
